@@ -1,0 +1,23 @@
+{
+    "name": "mlab/landing-page-generator",
+    "description": "A Simple Landing Page Generator for Laravel (Basic Bootstrap Page, feel free to customize).",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "10.x-dev",
+        "illuminate/console": "10.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mlab\\LandingPageGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mukti",
+            "email": "personal.mukti@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
