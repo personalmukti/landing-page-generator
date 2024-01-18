@@ -2,7 +2,7 @@
     "name": "mlab/landing-page-generator",
     "description": "A simple landing page generator using only 1 command. {php artisan generate:LandingPage}",
     "type": "library",
-    "version": "1.0.4",
+    "version": "1.0.1.0",
     "require": {
         "laravel/framework": "^10.0",
         "illuminate/support": "^10.0",
