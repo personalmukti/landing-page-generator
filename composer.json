@@ -2,11 +2,11 @@
     "name": "mlab/landing-page-generator",
     "description": "A simple landing page generator using only 1 command. {php artisan generate:LandingPage}",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "require": {
-        "laravel/framework": "9",
-        "illuminate/support": "9",
-        "illuminate/console": "9"
+        "laravel/framework": "^10.0",
+        "illuminate/support": "^10.0",
+        "illuminate/console": "^10.0"
     },
     "license": "MIT",
     "autoload": {
@@ -21,5 +21,22 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    ],
+    "scripts": {
+        "autoload": [
+            "@php artisan package:discover --ansi"
+        ],
+        "autoload-dev": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan vendor:publish --tag=laravel-assets --ansi",
+            "@php artisan ide-helper:generate --ansi",
+            "@php artisan ide-helper:meta --ansi"
+        ]
+    }
 }
