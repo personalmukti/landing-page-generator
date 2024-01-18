@@ -10,7 +10,11 @@ composer require mlab/landing-page-generator
 
 ## Usage
 
-Once the package is installed, and the landing page is generated, you can customize the landing page as needed. The generated files include:
+Once the package is installed, use this command:
+
+php artisan generate:LandingPage
+
+Then landing page is generated, you can customize the landing page as needed. The generated files include:
 
 - resources/views/landing.blade.php: The main landing page view.
 - resources/views/layouts/app.blade.php: The layout file that includes Bootstrap and sets up the basic structure.
@@ -18,6 +22,11 @@ Once the package is installed, and the landing page is generated, you can custom
 - public/css/main.css and public/js/main.js: Basic styling and JavaScript files.
 
 Feel free to modify these files to suit your project's requirements.
+
+## Minus
+
+The origin of development is to build automatic dynamic menu by mlab-menu in the config files. For now its not generated and not fully configured yet.
+I'm trying to complete that stuff in the next release.
 
 ## Configuration
 
