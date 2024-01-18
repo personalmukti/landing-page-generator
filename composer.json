@@ -19,5 +19,6 @@
             "email": "personal.mukti@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
