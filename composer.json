@@ -20,7 +20,14 @@
             "email": "personal.mukti@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mlab\\LandingPageGenerator\\LandingPageGeneratorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
         {
@@ -29,14 +36,10 @@
         }
     ],
     "scripts": {
-        "autoload": [
-            "@php artisan package:discover --ansi"
-        ],
-        "autoload-dev": [
+        "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan vendor:publish --tag=laravel-assets --ansi",
-            "@php artisan ide-helper:generate --ansi",
-            "@php artisan ide-helper:meta --ansi"
+            "@php artisan package:discover --ansi",
+            "@php artisan mlab:configure-package --ansi"
         ]
     }
 }
