@@ -1,11 +1,11 @@
 {
     "name": "mlab/landing-page-generator",
-    "description": "A Simple Landing Page Generator for Laravel (Basic Bootstrap Page, feel free to customize).",
+    "description": "A simple landing page generator using only 1 command. {php artisan generate:LandingPage}",
     "type": "library",
     "require": {
-        "php": "^8.1",
-        "illuminate/support": "10.x-dev",
-        "illuminate/console": "10.x-dev"
+        "laravel/framework": "9",
+        "illuminate/support": "9",
+        "illuminate/console": "9"
     },
     "license": "MIT",
     "autoload": {

@@ -34,7 +34,7 @@ final class TranslatableMessageVisitor extends AbstractVisitor implements NodeVi
             return null;
         }
 
-        if (!\in_array('TranslatableMessage', $className->getParts(), true)) {
+        if (!\in_array('TranslatableMessage', $className->parts, true)) {
             return null;
         }
 
